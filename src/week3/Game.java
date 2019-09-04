@@ -10,11 +10,8 @@ public class Game {
     int wins;
     int count;
 
-    void makeGuess(int value){
-        System.out.println("Please make a guess 1 - 10");
-        Scanner input = new Scanner(System.in);
-        int guess = input.nextInt();
-        if (guess == secret) {
+    public makeGuess(int value){
+        if (value == secret) {
             count = count +1;
             wins = wins +1;
             System.out.println("Yaaaay you won");
